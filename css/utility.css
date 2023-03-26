@@ -1,0 +1,44 @@
+.container{
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.grid-3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr );
+  
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn{
+  background: transparent;
+  color: var(--light-color);
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--light-color);
+  border-radius: 10px;
+}
+.btn02{
+  padding: 0.5rem 1rem;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.card {
+  background: var(--dark-color);
+  color: var(--light-color);
+  padding: 20px;
+  margin: 10px;
+}

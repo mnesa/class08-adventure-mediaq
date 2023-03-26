@@ -1,0 +1,157 @@
+:root{
+  --primary-color:#eb5757;
+  --light-color:#f6f6f6;
+  --dark-color:#1e1e1e;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: var(--dark-color);
+}
+img{
+  width: 100%;
+}
+
+/* sticker */
+.sticker{
+  background-color: #212121;
+  color: var(--light-color);
+  height: 60px;
+  text-align: center;
+}
+.sticker p{
+  display: inline-block;
+}
+/* header */
+#header{
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+#header .name{
+  display: flex;
+  height: 50px;
+}
+#header .name h2{
+  margin: 0.8rem 0 1.2rem 1rem;
+}
+#header .name img{
+  width: 50px;
+}
+#header nav li{
+  display: inline;
+}
+#header nav a{
+  padding: 0.5rem 1rem;
+  color: var(--light-color);
+  font-weight: bold;
+}
+#header nav a:hover{
+  background-color: var(--dark-color);
+}
+
+/* showcase */
+.showcase{
+  background: var(--dark-color);
+  color: var(--light-color);
+  padding: 2rem;
+  position: relative;
+}
+.showcase::before{
+  content: '';
+  background: url('../img/hill02.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.showcase .showcase-contain{
+  height: 65vh;
+}
+.showcase .showcase-text{
+  padding-top: 3rem;
+  font-weight: bold;
+  z-index: 100;
+}
+.showcase .showcase-text h2{
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* section-a */
+#section-a .boxes{
+  padding: 1.5rem 0;
+}
+/* gallery */
+.gallery{
+  background: var(--dark-color);
+  color: var(--light-color);
+  height: 400px;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.gallery::before {
+  content: '';
+  background: url('../img/hill01.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+.gallery .gallery-container{
+  text-align: right;
+  height: 300px;
+  padding: 1rem;
+  align-items: flex-end;
+}
+
+.gallery .gallery-text {
+  z-index: 100;
+}
+.gallery .btn{
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+/* footer */
+.footer{
+  background: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+  padding: 2rem;
+}
+.footer p > i{
+  padding: 1rem;
+  color: var(--primary-color);
+}
+
+/* media qurey */
+@media (max-width: 568px){
+  /* #header nav a{
+    padding: 1rem 2rem;
+    color: blueviolet;
+    margin: 2rem;
+  } */
+  .section-b .card-box.grid-3{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
